@@ -1,36 +1,59 @@
+/* Estilo para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif; /* Cambia la fuente según tus preferencias */
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5; /* Cambia el color de fondo según tu preferencia */
 }
 
+/* Estilo para el encabezado */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #ff6f61; /* Cambia el color de fondo del encabezado */
+    color: #fff; /* Cambia el color del texto del encabezado */
     padding: 20px;
     text-align: center;
 }
 
+/* Estilo para el título del encabezado */
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Ajusta el tamaño del título */
+}
+
+/* Estilo para el contenedor principal */
 .container {
-    max-width: 960px;
+    max-width: 1200px; /* Cambia el ancho máximo del contenedor principal */
     margin: 20px auto;
     padding: 0 20px;
 }
 
+/* Estilo para la cuadrícula de productos */
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta el tamaño mínimo y máximo de las columnas */
     gap: 20px;
+    justify-content: center; /* Centra los elementos en la cuadrícula */
 }
 
+/* Estilo para cada producto individual */
 .product {
-    border: 1px solid #ddd;
-    padding: 10px;
+    border: 2px solid #ff6f61; /* Cambia el color del borde */
+    padding: 20px;
+    background-color: #fff; /* Cambia el color de fondo del producto */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+    transition: transform 0.3s ease; /* Agrega una transición al hacer hover */
 }
 
+/* Estilo para el hover del producto */
+.product:hover {
+    transform: translateY(-5px); /* Mueve ligeramente hacia arriba al hacer hover */
+}
+
+/* Estilo para el pie de página */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #ff6f61; /* Cambia el color de fondo del pie de página */
+    color: #fff; /* Cambia el color del texto del pie de página */
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
